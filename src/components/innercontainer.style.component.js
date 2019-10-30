@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const InnerContainer = styled.div`
-  width: 318px;
-  height: 100px;
+  width: 98%;
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
