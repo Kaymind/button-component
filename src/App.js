@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Button from './components/button.style.component';
+import OutterContainer from './components/outtercontainer.style.component';
+import InnerContainer from './components/innercontainer.style.component'
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OutterContainer>
+        <InnerContainer>
+          <Button>
+            <span className="star">&#9733;</span>
+              CHECKOUT
+            <span className="star">&#9733;</span>
+          </Button>
+        </InnerContainer>
+      </OutterContainer>
     </div>
   );
 }
